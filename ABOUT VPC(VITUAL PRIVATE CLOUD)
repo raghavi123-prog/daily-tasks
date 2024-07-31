@@ -1,0 +1,37 @@
+The main topic is about virtual private cloud  . How it advantages , where we can say that virtual cloud can be mini internet with in the internet . It is highly secured in AWS as it is has provides public
+instances. where every organization donot want tos how there instances or virtual servers with in their same common servers for every one . So it came with an concept of virtual server 
+where in this virtual private cloud the security is high
+here it splits the ip addresses where we can say it as spiltting of ip address as subnetting next in this there few  security concepts
+!.internet gate way
+2.NACL(Network Access control Lists)
+3.Load Balancer
+4.Route tables
+5.security
+there is divided into private subnetes and public subnets
+In this we are using public subnets where  every can use it if they enters to network gateway
+now, create an vpc create new check all the configurations check in vpc settings and click on vpc and more
+next, create an instance in networking with security setting ass vpn there it slraedy give default vpc but add the new one you created and enable public ip address
+next launch instance
+now connect throught instance and try with python3
+open the terminal or mobaexterm terminal or putty 
+use cmd : ssh -i <filename> ubuntu@ipaddress eg:ssh -i new_learning ubuntu@54.84.144.232
+get into theinsatnce
+after this upadate  cmd: sudo apt update # it is a gud practice to update
+next install eg: python3
+next use the cmd: python3 -m http.server 8000
+next go to the browser and check: http://54.84.144.232:8000/  # it will does not connect as even  VPC(NACL) network gateway gave all the permission default security groups doesn't allow
+so we need to go to the instances there in security<inbound rules<edit inbound rules<allow permission for port number 8000
+now it will give output:Directory listing for /
+.bash_logout
+.bashrc
+.cache/
+.profile
+.python_history
+.ssh/
+.sudo_as_admin_successful
+.Xauthority
+# the above code will be displayed
+now, what about VPC, even the security groups allow (security groups only defaulty have permissions to allow) but vpc can able to deny even after security groups allow
+open the vpc network setting <inbound rules < deny
+here it follows asending order wher lowest number order is followed
+for eg: we firsty tabe 100 number and allow all the permissions and take 200 number deny permission . It follows first 100 only 
