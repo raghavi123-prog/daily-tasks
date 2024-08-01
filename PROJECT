@@ -1,0 +1,9 @@
+creating the VPC for the servers that can be used in productiion environment 
+* Then we use auto -scaling and nand gateway for security here there will be route tables as protection
+first layer as internet gateway after taht there will be auto scaling and next security groups
+now what are prerequicites to create: 1. VPC
+2.auto scaling (which is  ecr2 insatnce(here we create private subnet we wont give public IP address enable)
+3. Next to connect with internet we use desbian (we create instance with desbian which acts an intermediate be two private subnets  ec2 instances that are subnets )
+next we create ec2 insatnces in two availability zones
+4. we connect private subnets with desbien using cmd:
+process:
