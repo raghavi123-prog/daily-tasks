@@ -1,0 +1,28 @@
+here in day 10 Learned about GUI and CLI
+GUI(which means Graphical User Interface ) CLI (Command line interface) in this we run the programs or execute the programs using command line interface .
+where we can use GUI to perform tasks but to perform large tasks like creating of VPC's and  ec2 instances to many creation of these instances and s3 buckets or any other will might take 
+lots of tyme so as Devveops engineer to faster the process they use CLI(commmand line Interface)
+Here in windows we (ORACLE virtual box) or we ca use git bsh as it acts as CLI . In mAc there is default CLI 
+Now How we connect to the our AWS account to CLI .
+By using following steps: 1.my account
+2. My security Credianals
+3.Access Keys(here there is an option called Acess Keys where we have an option to create Two Acess Keys only wheen we create an Acess keys we get both public key and special key we needd to sownload it)
+Now, to link with our CLI (run an cmd: AWS configure)
+it shows an enter of public key , NExt special key and default region click on enter and follows , Now it get Linked to our account next check by creating  
+now we will list s3 buckets 
+cmd: aws s3 ls
+it shows the buckets that are in
+Now how to create an  ec2 instance using cmd:aws ec2 run-instances --image-id ami-003d03cfeIb0468 --instances-type t2.micro --key-name new_learning --subnet-019ea91b5252e7 --security-group-ids sg-02e11ced32ed32ef9da5c 
+This is the cmd we used to create ec2 instance with GUI explanation of command here we get image id by open gui try jsut click on launch instance image id means os we are using
+i am using ubuntu when we click on ubuntu we get shown an image id copy it and paste it on code next key name that we already created two keys or we can create new key also next security groups 
+we can by ec2 dashbaord there security groups laready created or we can create new nad copy it  as well with subnets these subnets re in Vpc . if wwe follow this we create as many as we can ec2 instances 
+these cmd are in the Aws pages where when ever we needed we can type (for eg: ec2 cli) it shows the Data that how to frame an command
+Preview: install cli in virtaul box it self
+go to AWS CLi in browser 
+click on Documentation -> user guide->left side(get started) ->install/update -> there is code for linux, Windows , MAc-> follow the steps of Linux as we are using Linux Oracle virtual box
+copy the codes and run on the cmd prompt (Note : open the browser in virtual box it self and copy and paste it or else it does not work with external browsers)
+check by using cmd: aws --version
+here the prerequisite is python 
+the version msut b ewith 2. or else 1 is sold version
+next, link the my cli with my account using "Acess keys " and Secret Acess Keys"
+next followd by cmd that need to be cretaed using according to requirements .
