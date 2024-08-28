@@ -1,0 +1,21 @@
+now we know CFT(cloud Formation Templates)
+how we use cloud formation tempalates .These are main difference in cli cft is used for large projects and drift detection
+What is meant by drift detection?
+Drift Detection means changes that are made with out one who created 
+(for eg: there is one who created the  s3 bucket or ec2 instance using code and enabled versioning but therre is some one who removed by using ui edit option)
+this is mentionted by using drift technology where when there is changes we will check for the changes and drift the changes and identified what ever is drifted .
+what is performed: firstly created an s3 bucket open cloud formation in UI there it shows stack creation click on it and there it shows as option one is 1. choose an existing Template 
+2.Use a sample template 
+3. Build from designer template
+As a new user we can build from a designer Template where we can designed our own yaml files or json files
+but there is another option we can use choose anexisting template and we can import the in specify template we can upload yaml or json file 
+ I follow the uploading process where i write an yaml code in visual studio and and save it  in the documents and upload it.
+where after uplaod it get shows in progress and get created where after that we can check stack actions where in my s3 bucket get created after that with that s3 bucket there some other yaml
+file bucket is created so i removed manually my s3 bucket it must be shown in stack where when i click on stack action it get showed how to find stack actions and check stack drift it shows 
+status as drifted
+2) next one same we addded verssioning to the yaml code using cloud formation document and template Reference  document  where i enabled versioning and cerated a new bucket but by using edit
+properties i just edited as disable versioning 
+it msut been shown in drift by clicking on 1. Detect Drift
+2. View drift result we will get it we can check by view drift results -> resource drift status -> check the drift that needs to be checked -> click on view drift details 
+finally it shows the cahnges taht are happened 
+these are things about cloud formation Template.
