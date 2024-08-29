@@ -1,0 +1,8 @@
+CODE COMMIT # it is similar to th egithub 
+as same as similar to it
+steps to create and connect to  command promp in linux
+first open the Ui  type code commit-> it shows create repository-> cretae a repository-> next it shows an url to copy to cmd promp
+why we use cmd promp if we can use uI -> because we can only implement one file in it and only make one file changes in it and here the changes in cli is once we can implement many files an
+and we commit changes ad code create branches every thing similar to github
+how to connect with cmd : 1) firstly we must have git in it so install git in it
+next rum cmd: gin configure copy url here
