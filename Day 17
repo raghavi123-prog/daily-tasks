@@ -1,0 +1,16 @@
+AWS lambda functions:
+howto create lambda function: Demo
+go to AWS account -> check for lamda function -> create function-> there it shows three options -> 1) Author from Scatch 
+2) Use a blueprint
+3)Container image
+Author from scatch is used to create from the vs code nad upload
+use a blueprint is the one alreaady aws provide we gone use it
+lastly third one is conatiner image where we get it to create from container (docker container s and upload)
+
+next -> run time as python
+there are only few scripts that needs to be followed carefully that are only executed and write the test codes
+click on Advanced settings -> click on function URL (this is function is enabled it must be accesed from the ouutside world)
+next click on Non ewhen shows iam user or none we will selelct none as it helps to click none for 
+lambda function is successfully created -> it shows two options 
+lambda function are serverless event trigger function that event can be ccloud watch , trigger from s3 or some other supports which have triggers 
+without triggerring we need to run manually daily
